@@ -33,7 +33,7 @@ const Navbar = () => {
                             src={logo}
                             width={120}
                             height={50}
-                            alt="Float UI logo"
+                            alt="EA logo"
                         />
                     </Link>
                     <div className="md:hidden">
