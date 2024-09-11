@@ -25,7 +25,6 @@ const Footer = () => {
             );
             toast.success("Email Subscribed Successfully!");
             // console.log('Email Subscribed Successfully!', response.data);
-            reset();
         } catch (error) {
             console.error('Failed to send email:', error);
             toast.error("Uh oh! Something went wrong.")
@@ -61,7 +60,7 @@ const Footer = () => {
                                     {...register("email")}
                                 />
                             </div>
-                            <Button type='submit'>
+                            <Button variant={"secondary"} type='submit'>
                                 {loading ? <Spinner /> : 'Subscribe'}
                             </Button>
                         </form>

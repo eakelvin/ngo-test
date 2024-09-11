@@ -5,6 +5,5 @@ type FooterValues = {
 type ContactValues = {
     name: string
     email: string
-    phone: string
     message: string
 }
