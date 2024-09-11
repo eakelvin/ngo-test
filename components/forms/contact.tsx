@@ -45,25 +45,25 @@ const Contact = () => {
             </div>
             <div className="flex items-stretch justify-center mt-8">
                 <div className="grid md:grid-cols-3 gap-8">
-                    <div className="md:col-span-1 w-full bg-[#FFFFFF] shadow md:p-2 p-5 h-full">
+                    <div className="md:col-span-1 w-full shadow md:p-2 p-5 h-full">
                         <ul className="">
                             <li className='mb-4'>
                                 <div className='flex flex-row items-center'>
                                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#040D7F] text-gray-50">
                                         <IoCallOutline size={20} />
                                     </div>
-                                    <h3 className="ml-2 text-lg font-medium leading-6 text-gray-900 dark:text-white">
+                                    <h3 className="ml-2 text-lg font-medium leading-6">
                                         Call Us
                                     </h3>
                                 </div>
                                 <div className="my-4">
-                                    <p className="text-gray-600 dark:text-slate-400">
+                                    <p className="">
                                         We are available within 48 hours
                                     </p>
-                                    <p className="text-gray-600 dark:text-slate-400">
+                                    <p className="">
                                         Phone: 0211110009
                                     </p>
-                                    <p className=" text-gray-600 dark:text-slate-400">
+                                    <p className=" ">
                                         Email: essentialaid@gmail.com
                                     </p>
                                     <p className=" text-gray-600 dark:text-slate-400">
@@ -98,7 +98,7 @@ const Contact = () => {
                                         <Input
                                             type="text"
                                             placeholder="Your Name*"
-                                            className="mb-2 bg-[#F5F5F5] border border-gray-400 shadow-md dark:text-gray-300 sm:mb-0"
+                                            className="mb-2 shadow-mdm:mb-0"
                                             {...register("name")}
                                             required
                                         />
@@ -108,7 +108,7 @@ const Contact = () => {
                                         <Input
                                             type="email"
                                             placeholder="Your Email*"
-                                            className="mb-2 bg-[#F5F5F5] border-gray-400 shadow-md dark:text-gray-300 sm:mb-0"
+                                            className="mb-2 shadow-md sm:mb-0"
                                             {...register("email")}
                                             required
                                         />
@@ -120,7 +120,7 @@ const Contact = () => {
                                         cols={30}
                                         rows={7}
                                         placeholder="Your Message"
-                                        className="text-base mb-2 w-full bg-[#F5F5F5] rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
+                                        className="text-base mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                                         {...register("message")}
                                         required
                                     >
