@@ -1,13 +1,41 @@
 "use client"
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { footerNavs } from '@/utils/link'
 import logo from '@/assets/images/ea-high-resolution-logo-black.png'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
+import { useForm, SubmitHandler } from 'react-hook-form'
+import axios from 'axios'
+import toast from 'react-hot-toast'
+import Spinner from '../ui/spinner'
 
 const Footer = () => {
+    const [loading, setLoading] = useState<Boolean>(false);
+    const {
+        register, handleSubmit, formState: { errors }, reset
+    } = useForm<FooterValues>();
+
+    const onSubmit: SubmitHandler<FooterValues> = async (data) => {
+        try {
+            setLoading(true);
+            // const response = await axios.post(
+            //     `${process.env.BASE_URL}/messages/create`,
+            //     data
+            // );
+            toast.success("Email Subscribed Successfully!");
+            console.log('Email Subscribed Successfully!', data);
+            reset();
+        } catch (error) {
+            console.error('Failed to send email:', error);
+            toast.error("Uh oh! Something went wrong.")
+        } finally {
+            setLoading(false);
+            reset();
+        }
+    };
+
     return (
         <footer className="pt-10 bg-gray-800 text-white">
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
@@ -18,7 +46,10 @@ const Footer = () => {
                         </h3>
                     </div>
                     <div className="flex-1 mt-6 md:mt-0">
-                        <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-x-3 md:justify-end">
+                        <form
+                            onSubmit={handleSubmit(onSubmit)}
+                            className="flex items-center gap-x-3 md:justify-end"
+                        >
                             <div className="relative">
                                 <svg className="w-6 h-6 text-gray-400 absolute left-3 inset-y-0 my-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -28,9 +59,12 @@ const Footer = () => {
                                     type='email'
                                     placeholder="Enter your email"
                                     className="pl-12 pr-3 py-2 shadow-sm"
+                                    {...register("email")}
                                 />
                             </div>
-                            <Button>Subscribe</Button>
+                            <Button type='submit'>
+                                {loading ? <Spinner /> : 'Subscribe'}
+                            </Button>
                         </form>
                     </div>
                 </div>
