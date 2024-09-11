@@ -1,9 +1,7 @@
 "use client"
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { footerNavs } from '@/utils/link'
 import logo from '@/assets/images/ea-high-resolution-logo-black.png'
-import Link from 'next/link'
-import Image from 'next/image'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
 import { useForm, SubmitHandler } from 'react-hook-form'
@@ -15,17 +13,17 @@ const Footer = () => {
     const [loading, setLoading] = useState<Boolean>(false);
     const {
         register, handleSubmit, formState: { errors }, reset
-    } = useForm<FooterValues>();
+    } = useForm<FooterValues>({ mode: "onChange" });
 
     const onSubmit: SubmitHandler<FooterValues> = async (data) => {
         try {
             setLoading(true);
-            // const response = await axios.post(
-            //     `${process.env.BASE_URL}/messages/create`,
-            //     data
-            // );
+            const response = await axios.post(
+                `${process.env.BASE_URL}/subscribe/create`,
+                data
+            );
             toast.success("Email Subscribed Successfully!");
-            console.log('Email Subscribed Successfully!', data);
+            // console.log('Email Subscribed Successfully!', response.data);
             reset();
         } catch (error) {
             console.error('Failed to send email:', error);
