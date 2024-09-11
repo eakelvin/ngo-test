@@ -4,23 +4,25 @@ import { Button } from '../ui/button'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '@/assets/images/ea-high-resolution-logo-black.png'
+import { navigation } from '@/utils/link'
 
 const Navbar = () => {
     const [state, setState] = useState(false)
 
-    const navigation = [
-        { title: "Home", path: "/" },
-        { title: "About", path: "/about" },
-        { title: "Resources", path: "javascript:void(0)" },
-        { title: "Contact", path: "/contact" },
-    ]
+    useEffect(() => {
+        const handleClickOutside = (e: MouseEvent) => {
+            const target = e.target as HTMLElement;
+            if (!target.closest(".menu-btn")) {
+                setState(false);
+            }
+        };
 
-    // useEffect(() => {
-    //     document.onclick = (e) => {
-    //         const target = e.target;
-    //         if (!target.closest(".menu-btn")) setState(false);
-    //     };
-    // }, [])
+        document.addEventListener("click", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav className={`bg-white pb-5 md:text-sm ${state ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0" : ""}`}>
