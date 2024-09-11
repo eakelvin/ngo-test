@@ -84,7 +84,7 @@ const Footer = () => {
                         </Link>
                     </div>
                 </div>
-                <div>
+                <div className='py-2'>
                     <p className="">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe ratione necessitatibus neque molestiae consectetur harum omnis inventore recusandae impedit at expedita perferendis aspernatur numquam obcaecati, in adipisci quidem reprehenderit vel.
                     </p>
