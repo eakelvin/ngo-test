@@ -69,7 +69,7 @@ const Navbar = () => {
                         }
                     </ul>
                     <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
-                        <Link href={''}>
+                        <Link href={'/donate'}>
                             <Button className='w-full md:w-28'>
                                 Donate now
                             </Button>

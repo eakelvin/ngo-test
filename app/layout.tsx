@@ -19,27 +19,27 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: {
     template: "%s | Essential Aid",
-    default: "Essential Aid",
+    default: "Essential Aid | Empowering Communities, Delivering Hope",
   },
-  description: "At Essential Aid, we are committed to providing immediate and impactful support to communities in need. Our mission is to deliver essential resources, including food, healthcare, education, and disaster relief, to vulnerable populations worldwide.",
+  description: "Essential Aid provides support to communities in need. Our mission is to deliver resources to vulnerable populations worldwide.",
   // icons: {
   //   icon: "https://i.ibb.co/17kpK6P/E7-B6-C8-A3-CE77-4-DF1-9-B43-66316-C319396.png",
   // },
   openGraph: {
-    title: "Essential Aid",
-    description: "At Essential Aid, we are committed to providing immediate and impactful support to communities in need. Our mission is to deliver essential resources, including food, healthcare, education, and disaster relief, to vulnerable populations worldwide.",
+    title: "Essential Aid | Empowering Communities, Delivering Hope",
+    description: "At Essential Aid, we are committed to providing immediate and impactful support to communities in need. Our mission is to deliver essential resources to vulnerable populations worldwide.",
     type: "website",
     // images: main.src,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Essential Aid",
+    title: "Essential Aid | Empowering Communities, Delivering Hope",
     description: "At Essential Aid, we are committed to providing immediate and impactful support to communities in need. Our mission is to deliver essential resources, including food, healthcare, education, and disaster relief, to vulnerable populations worldwide.",
     site: "@CediRates",
     // images: main.src,
   },
   alternates: {
-    canonical: "https://cedirates.com/",
+    canonical: "https://ngo-test-six.vercel.app/",
   },
 };
 
