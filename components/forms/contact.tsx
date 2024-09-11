@@ -48,7 +48,7 @@ const Contact = () => {
                     <div className="md:col-span-1 w-full bg-[#FFFFFF] shadow md:p-2 p-5 h-full">
                         <ul className="">
                             <li className='mb-4'>
-                                <div className='ml-4 flex flex-row items-center'>
+                                <div className='flex flex-row items-center'>
                                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#040D7F] text-gray-50">
                                         <IoCallOutline size={20} />
                                     </div>
@@ -57,14 +57,23 @@ const Contact = () => {
                                     </h3>
                                 </div>
                                 <div className="my-4">
-                                    <p className="text-gray-600 dark:text-slate-400">We are available within 48 hours</p>
-                                    <p className="text-gray-600 dark:text-slate-400">Phone: 0211110009</p>
-                                    <p className=" text-gray-600 dark:text-slate-400">Email: essentialaid@gmail.com</p>
+                                    <p className="text-gray-600 dark:text-slate-400">
+                                        We are available within 48 hours
+                                    </p>
+                                    <p className="text-gray-600 dark:text-slate-400">
+                                        Phone: 0211110009
+                                    </p>
+                                    <p className=" text-gray-600 dark:text-slate-400">
+                                        Email: essentialaid@gmail.com
+                                    </p>
+                                    <p className=" text-gray-600 dark:text-slate-400">
+                                        Address: EA Street, 1442 GR East Lane
+                                    </p>
                                 </div>
                             </li>
                             <hr className="h-px my-8 bg-black border-0" />
                             <li className='mt-5'>
-                                <div className='ml-4 flex flex-row items-center'>
+                                <div className='flex flex-row items-center'>
                                     <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#040D7F] text-gray-50">
                                         <RxEnvelopeClosed size={20} />
                                     </div>
@@ -72,7 +81,7 @@ const Contact = () => {
                                         Send us a Message
                                     </h3>
                                 </div>
-                                <div className="ml-4 my-4">
+                                <div className="my-4">
                                     <p className="mb-2 text-gray-600 dark:text-slate-400">
                                         Fill out our form and we will contact you within 24 hours
                                     </p>
@@ -111,7 +120,7 @@ const Contact = () => {
                                         cols={30}
                                         rows={7}
                                         placeholder="Your Message"
-                                        className="mb-2 w-full bg-[#F5F5F5] rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md0 sm:mb-0"
+                                        className="text-base mb-2 w-full bg-[#F5F5F5] rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"
                                         {...register("message")}
                                         required
                                     >
