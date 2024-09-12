@@ -8,14 +8,6 @@
     mask-position: bottom;
 }
 
-/* .bgHero {
-    background-image: url('../images/team-building.jpg');
-    background: linear-gradient(0deg, rgba(0, 0, 0.56), rgba(0, 0, 0, 0.56));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
 .heroText {
     position: absolute;
     left: 20%;
@@ -60,7 +52,6 @@
     padding: 1.5em 2em;
     padding-right: 25%;
     line-height: 28px;
-    background-color: #F7F7F7;
 }
 
 .imageSection {

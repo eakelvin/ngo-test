@@ -23,12 +23,12 @@ const Projects = () => {
                                         <img src={items.authorLogo} className="w-full h-full rounded-full" alt={items.authorName} />
                                     </div>
                                     <div className="ml-3">
-                                        <span className="block text-gray-900">{items.authorName}</span>
+                                        <span className="block text-gray-900 dark:text-white">{items.authorName}</span>
                                         <span className="block text-gray-400 text-sm">{items.date}</span>
                                     </div>
                                 </div>
                                 <div className="pt-3 ml-4 mr-2 mb-3">
-                                    <h3 className="text-xl text-gray-900">
+                                    <h3 className="text-xl text-gray-900 dark:text-white">
                                         {items.title}
                                     </h3>
                                     <p className="text-gray-400 text-sm mt-1">{items.desc}</p>
