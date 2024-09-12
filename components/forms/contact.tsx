@@ -46,7 +46,7 @@ const Contact = () => {
             </div>
             <div className="flex items-stretch justify-center mt-8">
                 <div className="grid md:grid-cols-3 gap-8">
-                    <div className="md:col-span-1 w-full dark:!shadow-slate-50 shadow md:p-2 p-5 h-full">
+                    <div className="md:col-span-1 w-full dark:border shadow md:p-2 p-5 h-full">
                         <ul className="">
                             <li className='mb-4'>
                                 <div className='flex flex-row items-center'>
@@ -88,7 +88,7 @@ const Contact = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="md:col-span-2 w-full dark:!shadow-white shadow card h-full max-w-6xl p-5 md:p-12">
+                    <div className="md:col-span-2 w-full dark:border dark:border-white shadow card h-full max-w-6xl p-5 md:p-12">
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="mb-6">
                                 <div className="md:flex md:flex-row md:space-x-4 space-y-3 md:space-y-0">
@@ -127,7 +127,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             <div className="flex justify-end">
-                                <Button className='dark:!bg-white dark:!text-black' type='submit'>
+                                <Button type='submit'>
                                     {loading ? <Spinner /> : 'Send Message'}
                                 </Button>
                             </div>

@@ -1,0 +1,225 @@
+.hero {
+    min-height: 90vh;
+    -webkit-mask-image: url("../images/about-mask.svg");
+    mask-image: url("../images/about-mask.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+}
+
+/* .bgHero {
+    background-image: url('../images/team-building.jpg');
+    background: linear-gradient(0deg, rgba(0, 0, 0.56), rgba(0, 0, 0, 0.56));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+.heroText {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    color: white;
+}
+
+.heroText h2 {
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.heroText h1 {
+    font-size: 60px;
+}
+
+.blurb {
+    margin-top: 2em;
+    padding: 0 16%;
+}
+
+.blurb p {
+    margin-top: 1em;
+}
+.blurb .titleText h2 {
+    font-size: 28px;
+}
+
+.blurb .titleText hr {
+    margin: auto;
+    width: 60px !important;
+}
+
+.detailedInfo {
+    position: relative;
+    display: flex;
+    margin: 24px 8%;
+}
+
+.textSection {
+    width: 75%;
+    padding: 1.5em 2em;
+    padding-right: 25%;
+    line-height: 28px;
+    background-color: #F7F7F7;
+}
+
+.imageSection {
+    position: absolute;
+    max-height: 35em;
+    right: 5%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    padding: 1em;
+    background-color: #FDE6A6;
+}
+
+.imageSection img {
+    position: relative;
+    height: 31.5em;
+    width: 30em;
+    object-fit: cover;
+}
+
+.imageSection p {
+    font-style: italic;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.team {
+    padding: 2% 8%;
+}
+
+.profile {
+    margin: 24px 0px;
+}
+
+.profileRightCol h2 {
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.profileRightCol h3 {
+    font-family: "Century Gothic Paneuropean";
+    font-size: 18px;
+}
+
+.imgWrapper {
+    aspect-ratio : 1 / 1;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 4px var(--main-primary-color);
+}
+
+.imgWrapper img {
+    object-position: center;
+}
+
+.profilePhoto {
+    width: 100%;
+    object-fit: cover;
+}
+
+.icons {
+    text-align: center;
+    margin-top: 12px;
+}
+
+.icons img {
+    margin: 0px 6px;
+}
+
+@media screen and (max-width: 826px) {
+    .team {
+        padding: 8% 8%;
+    }
+
+    .imgWrapper {
+        width: 216px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .profileRightCol {
+        margin-top: 12px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 826px) {
+    .hero {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .heroText {
+        position: relative;
+        font-size: 40px;
+        bottom: -7.5em;
+        left: 1em;
+        top: 5em;
+    }
+
+    .heroText h2 {
+        font-size: 42px;
+    }
+
+    .heroText h1 {
+        font-size: 40px;
+    }
+
+    .blurb {
+        margin-top: 2em;
+        padding: 0 4%;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .imageSection {
+        right: 0%;
+        max-height: 30em;
+    }
+
+    .imageSection img {
+        height: 26.5em;
+        width: 25em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .imageSection {
+        right: 0%;
+        max-height: 25em;
+    }
+
+    .imageSection img {
+        height: 21.5em;
+        width: 23em;
+    }
+}
+
+@media screen and (max-width: 826px) {
+    .detailedInfo {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .textSection {
+        width: auto;
+        padding-right: 2em;
+    }
+
+    .imageSection {
+        position: relative;
+        right: 0;
+    }
+
+    .imageSection img {
+        width: 100%;
+    }
+}

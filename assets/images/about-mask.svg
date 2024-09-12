@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="792.569" viewBox="0 0 1920 792.569">
+  <defs>
+    <filter id="Grey_Overlay" x="0" y="0" width="1920" height="792.569" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#e0af26"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Grey_Overlay)">
+    <path id="Grey_Overlay-2" data-name="Grey Overlay" d="M0,0H1920V726.375s-197.54,49.172-438.476,53.828c-236.9,2.327-395.155-4.648-743.012-74.941S0,726.375,0,726.375Z" opacity="0.557"/>
+  </g>
+</svg>

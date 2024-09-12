@@ -6,4 +6,12 @@ type ContactValues = {
     name: string
     email: string
     message: string
+};
+
+type Team = {
+    avatar: string
+    name: string
+    title: string
+    linkedin: string
+    twitter: string
 }
