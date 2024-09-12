@@ -11,7 +11,7 @@ import me from '@/assets/images/IMG_5656.jpg'
 
 const About = () => {
     return (
-        <div className='relative overflow-x-hidden'>
+        <div className='relative overflow-x-hidden dark:bg-black dark:text-white'>
             <div
                 className={style.hero}
                 style={{
@@ -58,10 +58,10 @@ const About = () => {
             </div>
             <div className="py-14 max-w-screen-xl mx-auto px-4 md:px-24">
                 <div className="max-w-xl">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    <h3 className="text-3xl font-semibold sm:text-4xl">
                         Meet our team
                     </h3>
-                    <p className="text-gray-600 mt-3">
+                    <p className="mt-3">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy.
                     </p>
                 </div>
@@ -78,7 +78,7 @@ const About = () => {
                                         />
                                     </div>
                                     <div>
-                                        <h4 className="text-gray-700 font-semibold sm:text-lg">{item.name}</h4>
+                                        <h4 className="font-semibold sm:text-lg">{item.name}</h4>
                                         <p className="text-indigo-600">{item.title}</p>
                                         <div className="mt-3 flex gap-4 text-gray-400">
                                             <a href={item.twitter}>
