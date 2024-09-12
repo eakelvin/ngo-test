@@ -65,3 +65,48 @@ export const posts = [
     }
 ];
 
+export const takes = [
+    {
+        avatar: "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+        name: "Give Happiness",
+        desc: "Giving happiness to others is one of the mos fulfilling things you can do in life.",
+    },
+    {
+        avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+        name: "Share Love",
+        desc: "When you share love with those around you, you create a ripple effects of kindness.",
+    },
+    {
+        avatar: "https://randomuser.me/api/portraits/women/79.jpg",
+        name: "Build Socially",
+        desc: "Building socially requires not just connecting with others, but also actively contributing.",
+    },
+];
+
+export const faqs = [
+    {
+        value: "item-1",
+        question: "Do all your Virtual Assistants speak English well?",
+        answer: "Yes, our Virtual Assistants speak English fluently with a neutral accent. They also have good grammar and good English writing skills."
+    },
+    {
+        value: "item-2",
+        question: "What are the academic and professional backgrounds of your virtual assistant?",
+        answer: "All our Virtual Assistants are univeristy graduates. They are skilled and experienced professionals who are familiar with working with foreign clients."
+    },
+    {
+        value: "item-3",
+        question: "What are your virtual assistant working hours?",
+        answer: "Yeh Ma Me Virtual Assistants work from 8am to 5pm but special requests for special hours can be considered."
+    },
+    {
+        value: "item-4",
+        question: "Do you train your virtual assistant?",
+        answer: "Yes, we do. Our virtual assistants undergo a comprehensive training program to equip them with the necessary tools and know-how in managing client accounts."
+    },
+    {
+        value: "item-5",
+        question: "What are your payment options?",
+        answer: "We accept bank or wire transfer to our bank account and mobile money."
+    },
+]
