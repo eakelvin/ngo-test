@@ -34,7 +34,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className={style.detailedInfo}>
-                    <div className={`${style.textSection} bg-[#F7F7F7] dark:bg-black`}>
+                    <div className={style.textSection}>
                         <h1 className='font-extrabold text-center text-4xl'>Our Vision</h1>
                         <p>
                             At Essential Aid, we To create a world where every individual has access to essential resources and opportunities, empowering communities to thrive with dignity and resilience.
