@@ -8,70 +8,108 @@ import paris from '@/assets/images/paris.jpg'
 import { faqs, takes } from '@/utils/data';
 import AccordionComp from '../section/accordion';
 import faq from '@/assets/images/faq.png'
+import MarqueeComp from '../ui/marquee';
+import SwiperCards from '../ui/swiper';
 
 const HomePage = () => {
     return (
-        <div className="mt-10 mx-auto max-w-screen-xl pb-4 px-4 sm:px-8">
-            <div className="text-center space-y-4">
-                <h1 className="text-gray-800 font-bold text-4xl md:text-5xl">
-                    Great futures are built <br /> with a small charity
-                </h1>
-                <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
-                    The world's largest social fundraising platform optimized for your charity in a more easy way
-                </p>
-            </div>
-            <div className="mt-5 flex justify-center items-center gap-2">
-                <Link href={'/donate'}>
-                    <Button size={'lg'}>Donate Now</Button>
-                </Link>
-                <Button size={'lg'} variant={"secondary"}>
-                    <IoMdPlay size={20} />
-                    Watch Video
-                </Button>
-            </div>
+        <div className="mt-10 mx-auto max-w-screen-xl pb-10 px-4 sm:px-8">
             <div>
-                <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm mx-auto mt-24">
-                    <Image
-                        src={paris}
-                        alt="University of Southern California"
-                        className="absolute inset-0 h-full w-full object-cover"
-                        width={100}
-                        height={100}
+                <div className="text-center space-y-4">
+                    <h1 className="text-gray-800 font-bold text-2xl sm:text-3xl md:text-5xl">
+                        Great futures are built <br /> with a small charity
+                    </h1>
+                    <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
+                        The world's largest social fundraising platform optimized for your charity in a more easy way
+                    </p>
+                </div>
+                <div className="mt-5 flex justify-center items-center gap-2">
+                    <Link href={'/donate'}>
+                        <Button size={'lg'}>Donate Now</Button>
+                    </Link>
+                    <Button size={'lg'} variant={"secondary"}>
+                        <IoMdPlay size={20} />
+                        Watch Video
+                    </Button>
+                </div>
+            </div>
+
+            <div className="mt-10 grid gap-4">
+                <div>
+                    <img
+                        className="h-auto max-w-full rounded-lg hidden sm:flex"
+                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg"
+                        alt=""
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                    <h3 className="z-10 mt-3 text-3xl font-bold text-white">Paris</h3>
-                    <div className="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">City of love</div>
-                </article>
 
-                <div className="p-1 flex flex-wrap items-center justify-center">
-                    <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+                    <figure className="relative max-w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 sm:hidden">
+                        <img className="rounded-lg h-auto max-w-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="image description" />
+                        <figcaption className="absolute px-4 text-lg text-white bottom-6">
+                            <p>Do you want to get notified when a new component is added to Flowbite?</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div className="grid grid-cols-5 gap-4">
+                    <div>
+                        <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
 
-                        <div className="relative pt-10 px-10 flex items-center justify-center">
-                            <div
-                                className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
-                                style={{
-                                    background: "radial-gradient(black, transparent 60%)",
-                                    transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
-                                    opacity: "0.2"
-                                }}
-                            >
+                        {/* <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+
+                            <div className="relative pt-10 px-10 flex items-center justify-center">
+                                <div
+                                    className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+                                    style={{
+                                        background: "radial-gradient(black, transparent 60%)",
+                                        transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
+                                        opacity: "0.2"
+                                    }}
+                                >
+                                </div>
+                                <img className="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="" />
                             </div>
-                            <img className="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="" />
-                        </div>
-                        <div className="relative text-white px-6 pb-6 mt-6">
-                            <span className="block opacity-75 -mb-1">Indoor</span>
-                            <div className="flex justify-between">
-                                <span className="block font-semibold text-xl">Peace Lily</span>
-                                <span className=" bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$36.00</span>
+                            <div className="relative text-white px-6 pb-6 mt-6">
+                                <span className="block opacity-75 -mb-1">Indoor</span>
+                                <div className="flex justify-between">
+                                    <span className="block font-semibold text-xl">Peace Lily</span>
+                                    <span className=" bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$36.00</span>
+                                </div>
                             </div>
-                        </div>
+                        </div> */}
+                    </div>
+                    <div>
+                        <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
+
+                        {/* <div>
+                            <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-full mx-auto">
+                                <Image
+                                    src={paris}
+                                    alt="University of Southern California"
+                                    className="absolute inset-0 h-full w-full object-cover"
+                                    width={100}
+                                    height={100}
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+                                <h3 className="z-10 mt-3 text-3xl font-bold text-white">Paris</h3>
+                                <div className="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">City of love</div>
+                            </article>
+                        </div> */}
+                    </div>
+                    <div>
+                        <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="" />
                     </div>
                 </div>
             </div>
-            <section className="py-14 bg-lime-300 rounded-md">
+
+            <section className="mt-10 py-14 bg-lime-300 rounded-md">
                 <div className="max-w-screen-xl mx-auto px-4 text-center md:px-8">
-                    <div className="mx-auto">
-                        <h3 className="text-gray-800 text-2xl md:text-3xl lg:text-4xl font-semibold">
+                    <div className="">
+                        <h3 className="text-gray-800 text-lg sm:text-2xl md:text-3xl lg:text-4xl font-semibold">
                             Fundraising on Essential Aid takes <br /> just a few minutes
                         </h3>
                     </div>
@@ -100,7 +138,20 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
-            <div className="bg-green-900 mt-10 rounded-md">
+
+            <div className='bg-black text-white rounded-t-md p-5 mt-10'>
+                <h1 className='text-xl md:text-2xl mb-6'>Fundraisers in Extreme Need</h1>
+                <SwiperCards />
+            </div>
+
+            <div className='mt-10 p-5'>
+                <h1 className='font-bold text-2xl md:text-3xl text-center mb-3'>
+                    Companies That Trust Essential Aid
+                </h1>
+                <MarqueeComp />
+            </div>
+
+            <div className="mt-10 bg-green-900 rounded-md">
                 <div className="max-w-screen-xl mx-auto px-4 py-3 flex items-center justify-between text-white sm:flex md:px-8">
                     <div className="flex gap-x-2">
                         <div className="w-10 h-10 flex-none rounded-lg bg-indigo-800 flex items-center justify-center">
@@ -117,6 +168,7 @@ const HomePage = () => {
                     </Link>
                 </div>
             </div>
+
             <section className="mt-10 py-14 bg-slate-400 rounded-md">
                 <div className=''>
                     <div className=''>
@@ -129,7 +181,7 @@ const HomePage = () => {
                     </div>
                     <div className="p-10 md:p-20 grid md:grid-cols-2">
                         <Image
-                            className="rounded-tr-[100px] rounded-bl-[100px] my-auto"
+                            className="rounded-tr-md rounded-bl-md my-auto"
                             src={faq}
                             alt=""
                             width={400}

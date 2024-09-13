@@ -1,3 +1,13 @@
+const alphabet = require("../assets/images/alphabet.png").default;
+const amazon = require("../assets/images/amazon.png").default;
+const apple = require("../assets/images/apple.png").default;
+const aramco = require("../assets/images/aramco.png").default;
+const berk = require("../assets/images/berk.png").default;
+const meta = require("../assets/images/meta.png").default;
+const microsoft = require("../assets/images/microsoft.png").default;
+const nvidia = require("../assets/images/nvidia.png").default;
+const ba = require("../assets/images/ba.jpg").default;
+
 export const aboutItems = [
     {
         value: "item-1",
@@ -109,4 +119,42 @@ export const faqs = [
         question: "What are your payment options?",
         answer: "We accept bank or wire transfer to our bank account and mobile money."
     },
-]
+];
+
+export const images = [
+    { name: "alphabet", image: alphabet },
+    { name: "amazon", image: amazon },
+    { name: "apple", image: apple },
+    { name: "aramco", image: aramco },
+    { name: "berk", image: berk },
+    { name: "meta", image: meta },
+    { name: "microsoft", image: microsoft },
+    { name: "nvidia", image: nvidia },
+];
+
+export const fundraisers = [
+    {
+        image: ba,
+        job: 'Remote Business Analyst'
+    },
+    {
+        image: ba,
+        job: 'Remote Project Manager'
+    },
+    {
+        image: ba,
+        job: 'Remote HR Assistant'
+    },
+    {
+        image: ba,
+        job: 'Remote Administrative Assistant'
+    },
+    {
+        image: ba,
+        job: 'Remote Software Engineer'
+    },
+    {
+        image: ba,
+        job: 'Remote Data Analyst'
+    },
+];
