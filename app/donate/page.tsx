@@ -1,9 +1,10 @@
+import Donate from '@/components/forms/donate'
 import React from 'react'
 
 const page = () => {
     return (
         <div>
-            DONate!
+            <Donate />
         </div>
     )
 }
