@@ -16,7 +16,7 @@ const HomePage = () => {
         <div className="mt-10 mx-auto max-w-screen-xl pb-10 px-4 sm:px-8">
             <div>
                 <div className="text-center space-y-4">
-                    <h1 className="text-gray-800 font-bold text-2xl sm:text-3xl md:text-5xl">
+                    <h1 className="font-bold text-2xl sm:text-3xl md:text-5xl">
                         Great futures are built <br /> with a small charity
                     </h1>
                     <p className="text-gray-500 max-w-xl mx-auto leading-relaxed">
