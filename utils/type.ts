@@ -14,4 +14,11 @@ type Team = {
     title: string
     linkedin: string
     twitter: string
-}
+};
+
+type DonateValues = {
+    name: string
+    number: number
+    email: string
+    amount: number
+};

@@ -1,8 +1,42 @@
 "use client"
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
+import { SubmitHandler, useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 import { BiDonateHeart, BiDonateBlood } from "react-icons/bi";
+import Spinner from '../ui/spinner';
+import { PaystackButton } from 'react-paystack'
 
 const Donate = () => {
+    const [loading, setLoading] = useState<Boolean>(false);
+    const {
+        register, handleSubmit, formState: { errors }, reset
+    } = useForm<DonateValues>({ mode: "onChange" });
+
+    const componentProps = {
+        text: 'Paystack Button Implementation',
+        onSuccess: () => toast.success("Thank you for donating"),
+        onClose: () => toast.success("Are you sure you want to close?"),
+    };
+
+    const onSubmit: SubmitHandler<FooterValues> = async (data) => {
+        try {
+            setLoading(true);
+            // const response = await axios.post(
+            //     `${process.env.BASE_URL}/subscribe/create`,
+            //     data
+            // );
+            toast.success("Email Subscribed Successfully!");
+            console.log('Email Subscribed Successfully!', data);
+        } catch (error) {
+            console.error('Failed to send email:', error);
+            toast.error("Uh oh! Something went wrong.")
+        } finally {
+            setLoading(false);
+            reset();
+        }
+    };
+
     return (
         <div className="h-screen md:flex">
             <div
@@ -19,19 +53,26 @@ const Donate = () => {
                 <div className="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
             </div>
             <div className="flex md:w-1/2 justify-center py-10 items-center">
-                <form className="bg-white">
+                <form
+                    onSubmit={handleSubmit(onSubmit)}
+                    className="bg-white"
+                >
                     <h1 className="flex items-center gap-2 font-bold text-2xl mb-1">
                         Donate Now
                         <BiDonateHeart />
                     </h1>
-                    {/* <p className="text-sm font-normal text-gray-600 mb-7">Welcome Back</p> */}
                     <div className="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
                                 clip-rule="evenodd" />
                         </svg>
-                        <input className="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Full name" />
+                        <input
+                            className="pl-2 outline-none border-none"
+                            type="text"
+                            placeholder="Full name"
+                            {...register("name")}
+                        />
                     </div>
                     <div className="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none"
@@ -39,7 +80,12 @@ const Donate = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
                         </svg>
-                        <input className="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Username" />
+                        <input
+                            className="pl-2 outline-none border-none"
+                            type="number"
+                            {...register("number")}
+                            placeholder="Number"
+                        />
                     </div>
                     <div className="flex items-center border-2 py-2 px-3 rounded-2xl mb-4">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-400" fill="none"
@@ -47,14 +93,27 @@ const Donate = () => {
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                         </svg>
-                        <input className="pl-2 outline-none border-none" type="text" name="" id="" placeholder="Email Address" />
+                        <input
+                            className="pl-2 outline-none border-none"
+                            type="text"
+                            {...register("email")}
+                            placeholder="Email Address"
+                        />
                     </div>
                     <div className="flex items-center border-2 py-2 px-3 rounded-2xl">
                         <BiDonateBlood className='text-gray-400' size={20} />
-                        <input className="pl-2 outline-none border-none" type="number" name="" id="" placeholder="Amount" />
+                        <input
+                            type="number"
+                            {...register("amount")}
+                            placeholder="Amount"
+                            className="pl-2 outline-none border-none"
+                        />
                     </div>
-                    <button type="submit" className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2">
-                        Donate
+                    <button
+                        type="submit"
+                        className="block w-full bg-indigo-600 mt-4 py-2 rounded-2xl text-white font-semibold mb-2"
+                    >
+                        {loading ? <Spinner /> : 'Donate'}
                     </button>
                 </form>
             </div>
