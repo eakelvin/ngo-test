@@ -13,7 +13,7 @@ const Donate = () => {
         register, handleSubmit, watch, formState: { errors }, reset
     } = useForm<DonateValues>({ mode: "onChange" });
     const data = watch();
-    const publicKey = process.env.PAYSTACK_TEST_PUBLIC_KEY!
+    const publicKey = process.env.NEXT_PUBLIC_PAYSTACK_TEST_PUBLIC_KEY!
 
     const componentProps = {
         publicKey,

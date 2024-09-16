@@ -1,5 +1,4 @@
 import React from 'react'
-// import Donate from '@/components/forms/donate'
 import dynamic from 'next/dynamic';
 
 const Donate = dynamic(
@@ -13,6 +12,6 @@ const page = () => {
             <Donate />
         </div>
     )
-}
+};
 
 export default page
