@@ -22,9 +22,6 @@ export const metadata: Metadata = {
     default: "Essential Aid | Empowering Communities, Delivering Hope",
   },
   description: "Essential Aid provides support to communities in need. Our mission is to deliver resources to vulnerable populations worldwide.",
-  // icons: {
-  //   icon: "https://i.ibb.co/17kpK6P/E7-B6-C8-A3-CE77-4-DF1-9-B43-66316-C319396.png",
-  // },
   openGraph: {
     title: "Essential Aid | Empowering Communities, Delivering Hope",
     description: "At Essential Aid, we are committed to providing immediate and impactful support to communities in need. Our mission is to deliver essential resources to vulnerable populations worldwide.",
