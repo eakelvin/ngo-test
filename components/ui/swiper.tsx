@@ -28,7 +28,7 @@ const SwiperCards: React.FC = () => {
                     className=""
                 >
                     {fundraisers.map((remote, index) => (
-                        <SwiperSlide className=''>
+                        <SwiperSlide key={index} className=''>
                             <Card key={index} className="">
                                 <CardHeader>
                                     <Image src={remote.image} alt='' />
@@ -54,7 +54,7 @@ const SwiperCards: React.FC = () => {
                     className=""
                 >
                     {fundraisers.map((remote, index) => (
-                        <SwiperSlide className=''>
+                        <SwiperSlide key={index} className=''>
                             <Card key={index} className="">
                                 <CardHeader>
                                     <Image src={remote.image} alt='' />
