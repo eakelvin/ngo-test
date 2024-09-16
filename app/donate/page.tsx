@@ -1,5 +1,5 @@
-import Donate from '@/components/forms/donate'
 import React from 'react'
+import Donate from '@/components/forms/donate'
 
 const page = () => {
     return (
