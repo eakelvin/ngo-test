@@ -140,17 +140,17 @@ const HomePage = () => {
             </section>
 
             <div className='bg-black text-white rounded-t-md p-5 mt-10'>
-                <h1 className='text-xl md:text-2xl mb-6'>Fundraisers in Extreme Need</h1>
+                <h1 className='font-extrabold text-xl md:text-2xl mb-6'>Fundraisers in Extreme Need</h1>
                 <SwiperCards />
             </div>
 
             <section className=''>
                 <div className="mx-auto sm:px-6 lg:px-8">
                     <div className="relative isolate overflow-hidden px-6 py-24 text-center sm:rounded-3xl sm:px-16">
-                        <h2 className="font-nudge-extrabold mx-auto max-w-2xl text-2xl md:text-3xl font-bold uppercase tracking-wide">
+                        <h2 className="font-nudge-extrabold mx-auto max-w-2xl text-xl md:text-3xl font-bold uppercase tracking-wide">
                             Join our community now
                         </h2>
-                        <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-600">
+                        <p className="mx-auto mt-6 max-w-xl text-lg leading-8">
                             Join our community for donating and be a part of a positive change in the world
                         </p>
                         <div className="isolate mt-8 flex items-center justify-center -space-x-2 overflow-hidden">
@@ -162,7 +162,7 @@ const HomePage = () => {
                         </div>
                         <div className='mt-5'>
                             <p className='font-extrabold text-6xl'>120, 859+</p>
-                            <p className='mt-6'>people already joining</p>
+                            <p className='mt-6 mb-2'>people already joining</p>
                         </div>
                         <div className="flex items-center justify-center gap-x-6">
                             <Button>Join Now</Button>
@@ -207,25 +207,23 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <section className="mt-10 py-14 bg-slate-400 rounded-md">
+            <section className="mt-10 py-14 rounded-md">
                 <div className=''>
-                    <div className=''>
-                        <h1 className="font-bold text-2xl lg:text-3xl text-center">
-                            Frequently Asked Questions
-                        </h1>
-                        <p className="text-center">
-                            Here are the most common questions people ask about Essential Aid in relation to it's assistants & services
-                        </p>
-                    </div>
-                    <div className="p-10 md:p-20 grid md:grid-cols-2">
-                        <Image
-                            className="rounded-tr-md rounded-bl-md my-auto"
-                            src={faq}
-                            alt=""
-                            width={400}
-                        />
-                        <AccordionComp accordionItems={faqs} />
-                    </div>
+                    <h1 className="font-bold text-2xl lg:text-3xl text-center">
+                        Frequently Asked Questions
+                    </h1>
+                    <p className="text-center">
+                        Here are the most common questions people ask about Essential Aid in relation to it's assistants & services
+                    </p>
+                </div>
+                <div className="p-10 md:p-20 grid md:grid-cols-2">
+                    <Image
+                        className="rounded-tr-md rounded-bl-md my-auto"
+                        src={faq}
+                        alt=""
+                        width={400}
+                    />
+                    <AccordionComp accordionItems={faqs} />
                 </div>
             </section>
         </div>
