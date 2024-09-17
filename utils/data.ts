@@ -93,17 +93,17 @@ export const posts = [
 
 export const takes = [
     {
-        avatar: "https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ",
+        avatar: "https://media.istockphoto.com/id/1486910056/photo/hand-giving-heart-love-help-support-kindness.jpg?s=1024x1024&w=is&k=20&c=lb6pfYdbSOYiaLczMV7_Vpu48aQS9MGe0jrqLb5_CSQ=",
         name: "Give Happiness",
         desc: "Giving happiness to others is one of the mos fulfilling things you can do in life.",
     },
     {
-        avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+        avatar: "https://plus.unsplash.com/premium_photo-1721861984077-84991010902f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG92ZSUyMGluJTIwYWZyaWNhfGVufDB8fDB8fHww",
         name: "Share Love",
         desc: "When you share love with those around you, you create a ripple effects of kindness.",
     },
     {
-        avatar: "https://randomuser.me/api/portraits/women/79.jpg",
+        avatar: "https://images.unsplash.com/photo-1591887521948-b98f0b553919?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bG92ZSUyMGluJTIwYWZyaWNhfGVufDB8fDB8fHww",
         name: "Build Socially",
         desc: "Building socially requires not just connecting with others, but also actively contributing.",
     },
@@ -112,28 +112,28 @@ export const takes = [
 export const faqs = [
     {
         value: "item-1",
-        question: "Do all your Virtual Assistants speak English well?",
-        answer: "Yes, our Virtual Assistants speak English fluently with a neutral accent. They also have good grammar and good English writing skills."
+        question: "What is NGO ?",
+        answer: " An NGO stands for Non – Government Organization. The term NGO originated from the United Nations (UN), and is normally used to refer to organizations that do not form part of the government and are not conventional for profit or business. Today there is need for the betterment of the underprivileged section of the society. This need can be satisfied using non-profit organization."
     },
     {
         value: "item-2",
-        question: "What are the academic and professional backgrounds of your virtual assistant?",
-        answer: "All our Virtual Assistants are univeristy graduates. They are skilled and experienced professionals who are familiar with working with foreign clients."
+        question: "What are the types of NGO ?",
+        answer: "There are 2 types of non-profit NGO. One is Trust and the other is Society. The third type of NGO is a profitable NGO which is often registered under Companies Act."
     },
     {
         value: "item-3",
-        question: "What are your virtual assistant working hours?",
-        answer: "Yeh Ma Me Virtual Assistants work from 8am to 5pm but special requests for special hours can be considered."
+        question: "When is an NGO eligible for Government funding ?",
+        answer: "An NGO is eligible for Government funding after 3 years. However, in some special cases, an NGO can get Government funding even after 1 year if its project gets approved."
     },
     {
         value: "item-4",
-        question: "Do you train your virtual assistant?",
-        answer: "Yes, we do. Our virtual assistants undergo a comprehensive training program to equip them with the necessary tools and know-how in managing client accounts."
+        question: "What is CSR ?",
+        answer: "CSR stands for Corporate Social Responsibility. These are voluntary activities undertaken by a company to operate in an economic, social and environmentally sustainable manner. According to new CSR rule as implemented in 2013, every company makes a minimum profit of 500 crores must donate some amount of money in eradicating poverty, education and benefits of the society."
     },
     {
         value: "item-5",
-        question: "What are your payment options?",
-        answer: "We accept bank or wire transfer to our bank account and mobile money."
+        question: " What are the minimum members required to register an NGO ??",
+        answer: "The minimum members required to register an NGO is 3 if it is a Trust. It is not necessary to have all 3 members from 3 different states"
     },
 ];
 
@@ -150,27 +150,27 @@ export const images = [
 
 export const fundraisers = [
     {
-        image: ba,
-        job: 'Remote Business Analyst'
+        image: "https://images.unsplash.com/photo-1548783102-9a5003546e21?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGVscCUyMGFmcmljYXxlbnwwfHwwfHx8MA%3D%3D",
+        job: 'Help Haiti | Earthquake Relief Fund'
     },
     {
-        image: ba,
-        job: 'Remote Project Manager'
+        image: "https://images.unsplash.com/photo-1666281269793-da06484657e8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YWZyaWNhJTIwZWR1Y2F0aW9ufGVufDB8fDB8fHww",
+        job: 'Education in Zambia'
     },
     {
-        image: ba,
-        job: 'Remote HR Assistant'
+        image: "https://media.istockphoto.com/id/1129582306/photo/doctor-meet-african-child.webp?a=1&b=1&s=612x612&w=0&k=20&c=471YEjXKXrbeQYM0Mp50W2ADIdpd53hAcyq0ulBGjIQ=",
+        job: 'Health in Nigeria'
     },
     {
-        image: ba,
-        job: 'Remote Administrative Assistant'
+        image: "https://media.istockphoto.com/id/145188445/photo/vehicle-stuck-in-a-flood.webp?a=1&b=1&s=612x612&w=0&k=20&c=lG-dlD3BoaoYSog74Sh1vBlIGcOFdurSsgUKYLLRZTQ=",
+        job: 'Flood in Togo'
     },
     {
-        image: ba,
-        job: 'Remote Software Engineer'
+        image: "https://images.unsplash.com/photo-1522366973393-c86778cf310b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBvb3IlMjBjaGlsZHJlbiUyMGluJTIwYWZyaWNhfGVufDB8fDB8fHww",
+        job: 'Child Labour in Sudan'
     },
     {
-        image: ba,
-        job: 'Remote Data Analyst'
+        image: "https://images.unsplash.com/flagged/photo-1555251255-e9a095d6eb9d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cG9vciUyMGNoaWxkcmVuJTIwaW4lMjBhZnJpY2F8ZW58MHx8MHx8fDA%3D",
+        job: 'Help Poor children'
     },
 ];

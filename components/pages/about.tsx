@@ -61,11 +61,11 @@ const About = () => {
                     <h3 className="text-3xl font-semibold sm:text-4xl">
                         Meet our team
                     </h3>
-                    <p className="mt-3">
+                    {/* <p className="mt-3">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy.
-                    </p>
+                    </p> */}
                 </div>
-                <div className="mt-12">
+                <div className="mt-10">
                     <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {
                             team.map((item, idx) => (

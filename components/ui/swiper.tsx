@@ -31,7 +31,7 @@ const SwiperCards: React.FC = () => {
                         <SwiperSlide key={index} className=''>
                             <Card key={index} className="">
                                 <CardHeader>
-                                    <Image src={remote.image} alt='' />
+                                    <img src={remote.image} alt='' />
                                     <CardTitle>{remote.job}</CardTitle>
                                 </CardHeader>
                             </Card>
@@ -57,7 +57,7 @@ const SwiperCards: React.FC = () => {
                         <SwiperSlide key={index} className=''>
                             <Card key={index} className="">
                                 <CardHeader>
-                                    <Image src={remote.image} alt='' />
+                                    <img src={remote.image} alt='' />
                                     <CardTitle>{remote.job}</CardTitle>
                                 </CardHeader>
                             </Card>

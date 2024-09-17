@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Essential Aid | Empowering Communities, Delivering Hope",
     description: "At Essential Aid, we are committed to providing immediate and impactful support to communities in need. Our mission is to deliver essential resources, including food, healthcare, education, and disaster relief, to vulnerable populations worldwide.",
-    site: "@CediRates",
     images: main.src,
   },
   alternates: {

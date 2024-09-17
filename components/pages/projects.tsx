@@ -19,7 +19,7 @@ const Projects = () => {
                     posts.map((items, key) => (
                         <article className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm" key={key}>
                             <a href={items.href}>
-                                <Image
+                                <img
                                     src={items.img}
                                     loading="lazy"
                                     alt={items.title}

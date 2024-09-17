@@ -43,9 +43,9 @@ const HomePage = () => {
                     />
 
                     <figure className="relative max-w-full transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 sm:hidden">
-                        <img className="rounded-lg h-auto max-w-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/content-gallery-3.png" alt="image description" />
-                        <figcaption className="absolute px-4 text-lg text-white bottom-6">
-                            <p>Do you want to get notified when a new component is added to Flowbite?</p>
+                        <img className="rounded-lg h-auto max-w-full" src="https://images.unsplash.com/photo-1701189991917-162ce50220e4?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHBvb3IlMjBjaGlsZHJlbiUyMGluJTIwYWZyaWNhfGVufDB8fDB8fHww" alt="image description" />
+                        <figcaption className="absolute px-4 text-2xl text-white font-extrabold bottom-6">
+                            <p>Wanna help children in Africa?</p>
                         </figcaption>
                     </figure>
                 </div>
