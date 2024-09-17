@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import { BiDonateHeart, BiDonateBlood } from "react-icons/bi";
 import Spinner from '../ui/spinner';
 import { PaystackButton } from 'react-paystack'
+import Link from 'next/link';
 
 const Donate = () => {
     const [loading, setLoading] = useState<Boolean>(false);
@@ -34,7 +35,7 @@ const Donate = () => {
             // );
             // toast.success("Email Subscribed Successfully!");
             // console.log('Email Subscribed Successfully!', response.data);
-            console.log('Success:', data);
+            // console.log('Success:', data);
         } catch (error) {
             console.error('Failed to send email:', error);
             toast.error("Uh oh! Something went wrong.")
@@ -64,6 +65,12 @@ const Donate = () => {
                     onSubmit={handleSubmit(onSubmit)}
                     className="bg-white"
                 >
+                    <Link
+                        className='text-blue-500 mb-5'
+                        href={'/'}
+                    >
+                        Return Home
+                    </Link>
                     <h1 className="flex items-center gap-2 font-bold text-2xl mb-1">
                         Donate Now
                         <BiDonateHeart />

@@ -7,6 +7,7 @@ const meta = require("../assets/images/meta.png").default;
 const microsoft = require("../assets/images/microsoft.png").default;
 const nvidia = require("../assets/images/nvidia.png").default;
 const ba = require("../assets/images/ba.jpg").default;
+const gh = require('@/assets/images/Lives-in-Ghana-1536x1024.jpg').default;
 
 export const aboutItems = [
     {
@@ -38,41 +39,56 @@ export const aboutItems = [
 
 export const posts = [
     {
-        title: "What is SaaS? Software as a Service Explained",
-        desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people what they did for their anxiety, and some",
-        img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        title: "Community Feeding Programs",
+        goal: "To alleviate hunger and malnutrition in impoverished communities.",
+        desc: "Set up community kitchens to provide daily meals to those in need. Organize food drives and partner with local businesses to collect and distribute food donations. Launch a 'Meals for Kids' initiative to ensure that children in low-income families receive nutritious meals at school or community centers.",
+        img: "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*i8H03OFFB3U3tkYr",
         authorLogo: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-        authorName: "Sidi dev",
-        date: "Jan 4 2022",
+        authorName: "Essential Aid",
+        date: "Jan 4 2024",
         href: ""
     },
     {
-        title: "A Quick Guide to WordPress Hosting",
-        desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations about Whittington will be featured in the film",
-        img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        title: "Clean Water for All",
+        goal: "To provide access to safe drinking water and sanitation facilities in rural and underserved communities.",
+        desc: "Build and maintain water wells, rainwater harvesting systems, or solar-powered water filtration units. Implement hygiene and sanitation workshops to educate communities on the importance of clean water practices. Distribute water purification tablets and portable water filters to areas affected by drought or water contamination.",
+        img: "https://plus.unsplash.com/premium_photo-1710846919277-43516d98c674?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmdvJTIwY2xlYW4lMjB3YXRlcnxlbnwwfHwwfHx8MA%3D%3D",
         authorLogo: "https://api.uifaces.co/our-content/donated/FJkauyEa.jpg",
-        authorName: "Micheal",
-        date: "Jan 4 2022",
+        authorName: "Essential Aid",
+        date: "Jan 4 2024",
         href: ""
     },
     {
-        title: "7 Promising VS Code Extensions Introduced in 2022",
-        desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks. I realized today that I have all this stuff that",
-        img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        title: "Mobile Health Clinics",
+        goal: "Offer essential healthcare services to communities with limited access to medical care.",
+        desc: "Operate mobile clinics to deliver vaccinations, medical check-ups, and treatments. Conduct health awareness workshops on topics such as disease prevention and maternal health. Distribute medicines and health supplies in remote areas.",
+        img: "https://media.istockphoto.com/id/1586911323/photo/close-up-of-african-woman-hands-holding-red-heart-in-solidarity.webp?a=1&b=1&s=612x612&w=0&k=20&c=IK7oNrF3xqpOTEcXwFCVne532TMM2bufwyNiqfnkx-E=",
         authorLogo: "https://randomuser.me/api/portraits/men/46.jpg",
-        authorName: "Luis",
-        date: "Jan 4 2022",
+        authorName: "Essential Aid",
+        date: "Jan 4 2024",
         href: ""
     },
     {
-        title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-        desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational microlensing was used to observe the",
-        img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+        title: "Empowering Women Entrepreneurs",
+        goal: " Support women by providing resources and training for starting and growing small businesses.",
+        desc: "Provide microloans and financial education to women entrepreneurs. Offer vocational training programs in skills like tailoring, crafts, and farming. Create mentorship programs that connect women with successful business leaders.",
+        img: "https://images.unsplash.com/photo-1598690419800-8100e015ff2c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGVtcG93ZXIlMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D",
         authorLogo: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
-        authorName: "Lourin",
-        date: "Jan 4 2022",
+        authorName: "Essential Aid",
+        date: "Jan 4 2024",
+        href: ""
+    },
+    {
+        title: "Shelter and Relief for Disaster Victims",
+        goal: "Provide emergency relief and shelter to communities affected by natural disasters.",
+        desc: "Distribute relief supplies such as food, water, blankets, and hygiene kits to disaster victims. Set up temporary shelters for displaced families. Work on rebuilding homes and infrastructure in the aftermath of disasters.",
+        img: "https://plus.unsplash.com/premium_photo-1682092618317-9b50d60e6e0d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmdvfGVufDB8fDB8fHww",
+        authorLogo: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
+        authorName: "Essential Aid",
+        date: "Jan 4 2024",
         href: ""
     }
+    
 ];
 
 export const takes = [

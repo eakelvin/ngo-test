@@ -1,5 +1,7 @@
 import { posts } from '@/utils/data'
+import Image from 'next/image'
 import React from 'react'
+import logo from '@/assets/images/ea-high-resolution-logo-black.png'
 
 const Projects = () => {
     return (
@@ -17,7 +19,7 @@ const Projects = () => {
                     posts.map((items, key) => (
                         <article className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm" key={key}>
                             <a href={items.href}>
-                                <img
+                                <Image
                                     src={items.img}
                                     loading="lazy"
                                     alt={items.title}
@@ -25,7 +27,11 @@ const Projects = () => {
                                 />
                                 <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
                                     <div className="flex-none w-10 h-10 rounded-full">
-                                        <img src={items.authorLogo} className="w-full h-full rounded-full" alt={items.authorName} />
+                                        <Image
+                                            src={logo}
+                                            className='w-full h-full rounded-full'
+                                            alt={items.authorName}
+                                        />
                                     </div>
                                     <div className="ml-3">
                                         <span className="block">{items.authorName}</span>
