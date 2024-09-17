@@ -4,7 +4,6 @@ import React from 'react'
 import { Button } from '../ui/button'
 import { IoMdPlay } from "react-icons/io";
 import Link from 'next/link';
-import paris from '@/assets/images/paris.jpg'
 import { faqs, takes } from '@/utils/data';
 import AccordionComp from '../section/accordion';
 import faq from '@/assets/images/faq.png'
@@ -55,47 +54,9 @@ const HomePage = () => {
                     </div>
                     <div>
                         <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="" />
-
-                        {/* <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
-
-                            <div className="relative pt-10 px-10 flex items-center justify-center">
-                                <div
-                                    className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
-                                    style={{
-                                        background: "radial-gradient(black, transparent 60%)",
-                                        transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
-                                        opacity: "0.2"
-                                    }}
-                                >
-                                </div>
-                                <img className="relative w-40" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="" />
-                            </div>
-                            <div className="relative text-white px-6 pb-6 mt-6">
-                                <span className="block opacity-75 -mb-1">Indoor</span>
-                                <div className="flex justify-between">
-                                    <span className="block font-semibold text-xl">Peace Lily</span>
-                                    <span className=" bg-white rounded-full text-orange-500 text-xs font-bold px-3 py-2 leading-none flex items-center">$36.00</span>
-                                </div>
-                            </div>
-                        </div> */}
                     </div>
                     <div>
                         <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="" />
-
-                        {/* <div>
-                            <article className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-full mx-auto">
-                                <Image
-                                    src={paris}
-                                    alt="University of Southern California"
-                                    className="absolute inset-0 h-full w-full object-cover"
-                                    width={100}
-                                    height={100}
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-                                <h3 className="z-10 mt-3 text-3xl font-bold text-white">Paris</h3>
-                                <div className="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">City of love</div>
-                            </article>
-                        </div> */}
                     </div>
                     <div>
                         <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="" />
@@ -165,7 +126,7 @@ const HomePage = () => {
                             <p className='mt-6 mb-2'>people already joining</p>
                         </div>
                         <div className="flex items-center justify-center gap-x-6">
-                            <Button>Join Now</Button>
+                            <Button size={'lg'}>Join Now</Button>
                         </div>
                         <svg viewBox="0 0 1024 1024"
                             className="absolute left-1/2 top-1/2 -z-10 h-[72rem] w-[72rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"

@@ -112,27 +112,27 @@ export const takes = [
 export const faqs = [
     {
         value: "item-1",
-        question: "What is NGO ?",
+        question: "What is NGO?",
         answer: " An NGO stands for Non – Government Organization. The term NGO originated from the United Nations (UN), and is normally used to refer to organizations that do not form part of the government and are not conventional for profit or business. Today there is need for the betterment of the underprivileged section of the society. This need can be satisfied using non-profit organization."
     },
     {
         value: "item-2",
-        question: "What are the types of NGO ?",
+        question: "What are the types of NGO?",
         answer: "There are 2 types of non-profit NGO. One is Trust and the other is Society. The third type of NGO is a profitable NGO which is often registered under Companies Act."
     },
     {
         value: "item-3",
-        question: "When is an NGO eligible for Government funding ?",
+        question: "When is an NGO eligible for Government funding?",
         answer: "An NGO is eligible for Government funding after 3 years. However, in some special cases, an NGO can get Government funding even after 1 year if its project gets approved."
     },
     {
         value: "item-4",
-        question: "What is CSR ?",
+        question: "What is CSR?",
         answer: "CSR stands for Corporate Social Responsibility. These are voluntary activities undertaken by a company to operate in an economic, social and environmentally sustainable manner. According to new CSR rule as implemented in 2013, every company makes a minimum profit of 500 crores must donate some amount of money in eradicating poverty, education and benefits of the society."
     },
     {
         value: "item-5",
-        question: " What are the minimum members required to register an NGO ??",
+        question: " What are the minimum members required to register an NGO?",
         answer: "The minimum members required to register an NGO is 3 if it is a Trust. It is not necessary to have all 3 members from 3 different states"
     },
 ];
