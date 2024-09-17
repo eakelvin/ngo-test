@@ -28,7 +28,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Essential Aid Project
+
+Essential Aid is a NGO website that aims to support communities in need.
+This project has 4 other functional pages(about, contact, donate and projects) which give detailing information about Essential Aid's role. The project is well optimized with SEO
+This project also uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
